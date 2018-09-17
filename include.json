@@ -1,0 +1,13 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "slider/s-1",
+                "form/f-1"
+            ]
+        }
+    }
+}
