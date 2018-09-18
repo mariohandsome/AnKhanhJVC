@@ -1,0 +1,25 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-5
+	+pad(3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	figure
+		+mar(0)
+		.box-content
+			.title
+				+fz(1.8rem)
+				font-weight: bold
+				text-transform: uppercase
+				+mar(0 0 2rem 0)
+				color: color-get($mau,main)
+			.content, .brief-content
+				+fz(1rem)
+			.brief-content
+				+lh(2rem)
+		img
+			width: 100%
+

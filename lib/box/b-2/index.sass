@@ -1,0 +1,45 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-2
+	.item
+		background-size: cover
+		+pad(4rem 0)
+		&:nth-child(2)
+			min-height: 500px
+		+media-breakpoint-up(md)
+			background-size: auto
+		figcaption
+			display: flex
+			justify-content: flex-end
+			.box-content
+				+pad(0 1rem) 
+				width: 100%
+				color: #fff
+				+media-breakpoint-up(md)
+					+pad(0 3rem) 
+				+media-breakpoint-up(lg)
+					max-width: 80%
+					+pad(0 15px)
+				.h2
+					font-weight: bold
+					text-transform: uppercase
+					+fz(1.8rem)
+					+mar(0 0 2rem 0)
+				.brief-content
+					+fz(1.15rem)
+					+mar(0 0 2rem 0)
+					font-weight: lighter
+				.btn-more
+					+fz(1rem)
+					color: color-get($mau,trang)
+					+pad(.4rem 1.5rem)
+					border-radius: 20px
+					text-transform: uppercase
+					+fw(500)
+					border: 2px solid color-get($mau,trang)
+					&:active, &:hover
+						background: color-get($mau,trang)
+						color: color-get($mau,den)
