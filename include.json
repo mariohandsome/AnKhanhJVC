@@ -8,6 +8,31 @@
                 "slider/s-1",
                 "form/f-1"
             ]
+		},"resident": {
+            "body": [
+				"panigation/p-1",
+				"news/n-3",
+                "resident/r-1"
+            ]
+        },
+		"resident-service": {
+            "body": [
+				"gallery/g-4",
+                "resident-service/rs-1"
+            ]
+		},
+		"ak-news": {
+            "body": [
+				"panigation/p-1",
+				"news/n-3",
+                "ak-news/n-1"
+            ]
+        },
+		"featured-news": {
+            "body": [
+				"news-details/n-1",
+                "featured-news/fn-1"
+            ]
         }
     }
 }

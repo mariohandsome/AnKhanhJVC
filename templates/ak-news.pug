@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "An Khanh news"
+	- var description = "Description for An Khanh news page"
+	- var bodyclass = "ak-news"
+	- var href = "/ak-news.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/ak-news/n-1/index.pug
+block footer 
+	include ../lib/form/f-1/index.pug
