@@ -1,0 +1,11 @@
+extends _layout/layout.pug
+block variables
+	- var title = "introduce"
+	- var description = "Description for introduce page"
+	- var bodyclass = "introduce"
+	- var href = "/introduce.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/introduce/slider/index.pug
+	include ../lib/introduce/i-1/index.pug

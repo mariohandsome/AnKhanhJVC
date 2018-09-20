@@ -1,0 +1,121 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-project-detail-5
+	+pad(3rem 0)
+	background: color-get($mau,trang)
+	.slide
+		.title
+			+fz(1.8rem)
+			color: color-get($mau,main)
+			font-weight: bold
+		.brief-content
+			color: color-get($mau,duong-1)
+	// +media-breakpoint-up(lg)
+	// 	.slide
+	// 		+pad(null 6rem)
+	// 	+pad(4rem 0)
+	.owl-carousel
+		.owl-item
+			img
+				padding: .5rem
+	.carousel-1
+		color: color-get($mau,trang)
+		.item
+			position: relative
+			justify-content: center
+			display: flex
+			&.active
+				color: color-get($mau,extra)
+			figure
+				+mar(0)
+		// Nav
+		
+		.owl-nav
+			margin-top: 0
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					+bor-rad(50%)
+					text-align: center
+					color: color-get($mau,main)
+					background: color-get($mau,trang)
+					&:focus
+						outline: none
+				+media-breakpoint-up(lg)
+					&.owl-prev, &.owl-next
+						color: color-get($mau,main)
+						background: transparent
+						transform: translateY(-50%)
+						&.owl-prev
+							+pos(abs,50% null null -5%)
+						&.owl-next
+							+pos(abs,50% -5% null null)
+		.owl-dots
+			span
+				width: 8px
+				height: 8px
+			.owl-dot
+				&.active
+					span
+						background: color-get($mau,extra)
+	.carousel-2
+		.item
+			display: none
+			+pad(0 .5rem)
+			&.active
+				display: block
+			.itemc
+				display: flex
+				align-items: flex-end
+				min-height: 500px
+				.title-slider
+					text-align: center
+					width: 100%
+					+mar(0)
+					+pad(1rem null)
+					color: color-get($mau,trang)
+					background: rgba(0, 0, 0, 0.6)
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					color: color-get($mau,trang)
+					+bor-rad(50%)
+					background: color-get($mau,main)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+			+media-breakpoint-up(md)
+				+opacity(1)
+				margin-top: 0
+				+transition(all .3s ease-in-out)
+				button
+					&.owl-prev, &.owl-next
+						width: auto
+						height: auto
+						border-radius: 0
+						background: none
+						+fz(3rem)
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+						&:hover, &.active
+							&.owl-prev, &.owl-next
+								background: none
+								color: color-get($mau,extra)
+					&.owl-prev
+						+pos(abs, 50% null null 1rem)
+					&.owl-next
+						+pos(abs, 50% 1rem null null)

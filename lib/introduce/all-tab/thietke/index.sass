@@ -1,0 +1,32 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-project-detail-7
+	+pad(3rem 0)
+	background: color-get($mau,trang)
+	.slide
+		.title
+			+fz(1.8rem)
+			color: color-get($mau,main)
+			font-weight: bold
+		.content
+			+fz(1rem)
+		.brief-content
+			+fz(1.3rem)
+			color: color-get($mau,duong-1)
+		.item
+			.circle
+				list-style-type: disc
+			p
+				+mar(0)
+		.box-img
+			img
+				width: 100%
+		+media-breakpoint-up(lg)
+			.box-img
+				display: flex
+				justify-content: center
+				img
+					width: initial

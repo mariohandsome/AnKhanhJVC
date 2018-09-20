@@ -5,15 +5,28 @@
                 "header/h-14"
             ],
             "body": [
-                "slider/s-1",
-                "box/b-1",
-                "box/b-2",
-                "box/b-3",
-                "box/b-4",
-                "box/b-5",
-                "slider/s-2",
-                "box/b-6",
+                "home/slider/s-1",
+                "home/b-1",
+                "home/b-2",
+                "home/b-3",
+                "home/b-4",
+                "home/b-5",
+                "home/slider/s-2",
+                "home/b-6",
                 "form/f-1"
+            ]
+        },
+        "introduce": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "introduce/i-1",
+                "introduce/slider",
+                "introduce/all-tab/tongquan",
+                "introduce/all-tab/thietke",
+                "introduce/all-tab/quyhoach",
+                "introduce/all-tab/phattrien"
             ]
         }
     }
