@@ -7,42 +7,39 @@
 	padding-top: 4rem
 	padding-bottom: calc(4rem + 15px)
 	.item
-		+mar(0)
 		figure
 			+mar(0)
-		.item-img
-			.box-img
-				min-height: 600px
-				display: flex
-				justify-content: center
-				align-items: center
-				+media-breakpoint-up(md)
-					min-height: 462px
-			+media-breakpoint-up(lg)
-				&:nth-child(2)
-					.box-img
-						transform: scaleY(1.1)
-						img
-							transform: scaleY(1)
-		.full-box
+		.box-img
+			min-height: r(600px)
+			display: flex
+			justify-content: center
+			align-items: center
+		.logo
 			width: 100%
 			.box-content
-				.content
-					+mar(0 0 2rem 0)
+				+fz(r(16px))
 				.btn-more
-					+fz(1rem)
+					+fz(r(16px))
 					color: color-get($mau,trang)
-					+pad(.4rem 1.5rem)
+					+pad(r(11px) r(38px))
 					background: linear-gradient(to right, color-get($mau,extra), color-get($mau,main))
-					border-radius: 20px
+					border-radius: r(20px)
 					text-transform: uppercase
-					+fw(500)
+					+fw(400)
 					&:active, &:hover
 						background: rgba(177, 131, 8, 0)
 						color: color-get($mau,den)
-						border: 2px solid color-get($mau,main)
+						box-shadow: 0 0 0 2px color-get($mau,main) inset
 			img 
 				width: 100%
 				+mar(0 0 2rem 0)
 			+media-breakpoint-up(lg)
 				max-width: 85%
+	.fixed-width
+		+pad(0 r(5px))
+		+media-breakpoint-up(lg)
+			&:nth-child(2)
+				.item
+					transform: scaleY(1.1)
+					.box-img
+						transform: scale(1)
