@@ -6,28 +6,30 @@
 .home-box-2
 	.item
 		background-size: cover
-		+pad(4rem 0)
-		&:nth-child(2)
-			min-height: 500px
-		+media-breakpoint-up(md)
-			background-size: auto
-		figcaption
+		+pad(4rem r(15px))
+		&:first-child
 			display: flex
 			justify-content: flex-end
+		&:nth-child(2)
+			min-height: r(500px)
+		+media-breakpoint-up(md)
+			background-size: auto
+		+media-breakpoint-up(lg)
+			+pad(4rem 0)
+		.fixed-width
+			width: 100%
+			+media-breakpoint-up(md)
+			+media-breakpoint-up(lg)
+				max-width: 75%
+				+mar(0 r(15px) 0 0)
+			.h2
+				color: color-get($mau,trang)
+				font-weight: bold
+				text-transform: uppercase
+				+fz(r(36px))
+				+mar(0 0 2rem 0)
 			.box-content
-				+pad(0 1rem) 
-				width: 100%
 				color: #fff
-				+media-breakpoint-up(md)
-					+pad(0 3rem) 
-				+media-breakpoint-up(lg)
-					max-width: 80%
-					+pad(0 15px)
-				.h2
-					font-weight: bold
-					text-transform: uppercase
-					+fz(1.8rem)
-					+mar(0 0 2rem 0)
 				.brief-content
 					+fz(1.15rem)
 					+mar(0 0 2rem 0)

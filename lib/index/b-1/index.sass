@@ -4,13 +4,14 @@
 //////////////////////////////////////
 
 .home-box-1
-	padding-top: 4rem
-	padding-bottom: calc(4rem + 15px)
+	+pad(2rem 0)
+	+media-breakpoint-up(md)
+		+pad(4rem 0)
 	.item
 		figure
 			+mar(0)
 		.box-img
-			min-height: r(600px)
+			min-height: r(463px)
 			display: flex
 			justify-content: center
 			align-items: center
