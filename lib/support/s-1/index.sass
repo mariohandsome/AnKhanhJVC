@@ -1,0 +1,20 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.support-home
+	.h1
+		+mar(2rem 0)
+		+fz(r(36px))
+		color: color-get($mau,main)
+		font-weight: bold
+		+media-breakpoint-up(lg)
+			+mar(4rem 0 2rem)
+	.box-content
+		.content
+			+fz(r(16px))
+		.nav-item
+			&:last-child
+				.content
+					+lh(2.2rem)

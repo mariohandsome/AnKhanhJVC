@@ -54,6 +54,15 @@
                 "slider/s-1",
                 "location/l-1"
             ]
+        },
+        "support": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "slider/s-1",
+                "support/s-1"
+            ]
         }
     }
 }
