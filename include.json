@@ -5,14 +5,14 @@
                 "header/h-14"
             ],
             "body": [
-                "home/slider/s-1",
-                "home/b-1",
-                "home/b-2",
-                "home/b-3",
-                "home/b-4",
-                "home/b-5",
-                "home/slider/s-2",
-                "home/b-6",
+                "slider/s-1",
+                "index/b-1",
+                "index/b-2",
+                "index/b-3",
+                "index/b-4",
+                "index/b-5",
+                "slider/s-2",
+                "index/b-6",
                 "form/f-1"
             ]
         },
@@ -21,12 +21,29 @@
                 "header/h-14"
             ],
             "body": [
-                "introduce/i-1",
-                "introduce/slider",
-                "introduce/all-tab/tongquan",
-                "introduce/all-tab/thietke",
-                "introduce/all-tab/quyhoach",
-                "introduce/all-tab/phattrien"
+                "slider/s-1",
+                "nav/n-2",
+                "introduce/tongquan/t-1",
+                "introduce/thietke/t-1",
+                "introduce/quyhoach/q-1",
+                "introduce/phattrien/p-1"
+            ]
+        },
+        "product": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "slider/s-1",
+                "nav/n-3",
+                "product/p-1",
+                "product/BT5/b-1",
+                "product/BT5/b-2",
+                "product/BT5/b-3",
+                "product/BT5/b-4",
+                "product/BT5/b-5",
+                "product/BT5/b-6",
+                "product/BT5/b-7"
             ]
         }
     }

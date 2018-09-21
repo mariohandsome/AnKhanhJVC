@@ -1,0 +1,27 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.gioithieu-box-7
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.item
+		figure
+			+mar(0)
+			.box-content
+				+pad(r(20px) r(30px))
+				background: color-get($mau,duong-1)
+				.h3
+					+fz(r(18px))
+					+pad(1rem 0)
+					color: color-get($mau,trang)
+					border-bottom: 2px solid color-get($mau,duong-2)
+				.nav-item
+					+pad(r(12px) 0)
+					border-bottom: 2px dashed color-get($mau,trang)
+					.nav-link
+						+fz(r(15px))
+						+pad(0)
+						color: color-get($mau,trang)

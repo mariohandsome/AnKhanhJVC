@@ -1,0 +1,23 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.product-detail-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.h2
+		+fz(1.8rem)
+		color: color-get($mau,main)
+		font-weight: bold
+		+mar(0)
+	.full-width
+		.box-img
+			min-height: 300px
+			overflow: hidden
+			+media-breakpoint-up(lg)
+				min-height: 700px
+	.box-content
+		.content
+			+mar(0)

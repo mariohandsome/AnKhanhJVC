@@ -1,0 +1,75 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.h2
+		+fz(1.8rem)
+		color: color-get($mau,main)
+		font-weight: bold
+		+mar(0)
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					// background: darken(color-get($mau,trang),5%)
+					// +bor-rad(50%)
+					// text-align: center
+					+fz(1.5rem)
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+		+media-breakpoint-up(md)
+			.owl-nav
+				margin-top: 0
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+					&.owl-prev
+						+pos(abs, 50% null null -3.5rem)
+					&.owl-next
+						+pos(abs, 50% -3.5rem null null)
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: color-get($mau,trang)
+				&.active
+					span
+						background: color-get($mau,main)
+		// List
+		&.list-items
+			.item
+				a
+					color: color-get($mau,den)
+					text-decoration: none
+					h3
+						+pad(1rem null)
+						background: color-get($mau, vang-1)
+						+fz(1rem)
+						text-transform: uppercase
+				&:hover
+					img
+						+opacity(.8)
+					a
+						color: color-get($mau,den)
+					h3
+						background: color-get($mau,main)

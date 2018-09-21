@@ -1,0 +1,36 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.product-home
+	.h1
+		+mar(2rem 0)
+		+fz(1.8rem)
+		color: color-get($mau,main)
+		font-weight: bold
+		+media-breakpoint-up(lg)
+			+mar(4rem 0)
+	.link
+		text-decoration: none
+		color: color-get($mau,den)
+		&:hover, &:active
+			color: color-get($mau,trang)
+			.item
+				figure
+					.box-content
+						background: linear-gradient(to right, #edd47c, #b18308)
+		.item
+			min-height: 18.1rem
+			display: flex
+			align-items: flex-end
+			text-align: center
+			figure
+				width: 100%
+				+mar(0)
+				.box-content
+					+pad(1.5rem 0)
+					background: color-get($mau,xam-1)
+					.h2
+						+fz(1.2rem)
+						+mar(0)

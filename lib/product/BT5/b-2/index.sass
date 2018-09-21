@@ -1,0 +1,40 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.gioithieu-box-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.h2
+		+fz(1.8rem)
+		color: color-get($mau,trang)
+		font-weight: bold
+		+mar(0)
+		+media-breakpoint-up(lg)
+			color: color-get($mau,main)
+	.box-img
+		min-height: 300px
+		overflow: hidden
+		+media-breakpoint-up(lg)
+			min-height: 700px
+	.box-content
+		.content
+			+mar(0)
+		.link
+			color: color-get($mau,trang)
+			&:hover, &:active
+				text-decoration: none
+		.h3
+			+fz(1.375rem)
+	+media-breakpoint-up(lg)
+		.box-content
+			+pad(2rem)
+			min-height: 400px
+			opacity: .9
+			+mar(4rem 0)
+			.content
+				color: color-get($mau,trang)
+			.h3
+				color: color-get($mau,trang)
