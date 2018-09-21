@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Tiện ích"
+	- var description = "Description for utilities page"
+	- var bodyclass = "utilities"
+	- var href = "/utilities.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/slider/s-1/index.pug
+	include ../lib/nav/n-2/index.pug
+	include ../lib/utilities/u-1/index.pug

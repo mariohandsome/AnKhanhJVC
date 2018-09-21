@@ -1,0 +1,12 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Khu sinh hoạt cộng đồng"
+	- var description = "Description for utilities page"
+	- var bodyclass = "utilities-detail"
+	- var href = "/utilities-detail.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/slider/s-1/index.pug
+	include ../lib/nav/n-2/index.pug
+	include ../lib/utilities/utilities-detail/d-1/index.pug
