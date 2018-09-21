@@ -45,6 +45,15 @@
                 "product/BT5/b-6",
                 "product/BT5/b-7"
             ]
+        },
+        "location": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "slider/s-1",
+                "location/l-1"
+            ]
         }
     }
 }
