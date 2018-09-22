@@ -11,11 +11,13 @@
 		+mar(0)
 		.box-content
 			.title
-				+fz(r(32px))
 				font-weight: bold
 				text-transform: uppercase
 				+mar(0 0 2rem 0)
 				color: color-get($mau,main)
+				+fz(2rem)
+				+media-breakpoint-up(lg)
+					+fz(r(36px))
 			.content, .brief-content
 				+fz(r(16px))
 			.brief-content
