@@ -4,15 +4,17 @@
 //////////////////////////////////////
 
 .canhcam-carousel-9
-	+pad(4rem null)
+	+pad(3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
 	.h2
 		text-transform: uppercase
 		color: color-get($mau, main)
 		+fw(bold)
-		+fz(1.8rem)
+		+fz(r(32px))
 	.slide-1
 		.item
-			min-height: 500px
+			min-height: r(500px)
 			&:focus
 				outline: 0
 	.wrap
