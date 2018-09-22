@@ -1,0 +1,20 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-nav-4
+	.nav-list
+		border-bottom: 1px solid color-get($mau, main)
+		justify-content: center
+		.nav-item
+			+pad(0)
+			.nav-link
+				+fz(r(16px))
+				text-transform: uppercase
+				+pad(.6rem 2rem)
+				color: color-get($mau, xam-3)
+			+ .active
+				.nav-link
+					+bg-rad
+					color: color-get($mau, trang)
