@@ -3,3 +3,38 @@
 	+pad(3rem 0)
 	+media-breakpoint-up(lg)
 		+pad(3.5rem 0)
+	.item-first
+		+media-breakpoint-up(lg)
+			.col-lg-4
+				padding-left: 0
+				max-width: calc(33.3333333333% + 30px)
+				flex: 0 0 calc(33.3333333333% + 30px)
+			.col-lg-8
+				max-width: calc(66.6666666667% - 30px)
+				flex: 0 0 calc(66.6666666667% - 30px)
+		.text
+			p
+				text-align: justify
+				margin-bottom: 1.5rem
+				+fz(r(16px))
+			&.text-second
+				background: color-rgba(color-get($mau,duong-3), .1)
+				+pad(2.25rem 1.8rem)
+				h4
+					+fz(r(18px))
+					margin-bottom: 1.25rem
+					text-transform: uppercase
+					color: color-get($mau, duong-3)
+				ul
+					padding-left: 0
+					list-style-type: none
+					li
+						position: relative
+						padding-left: 1.5rem
+						&:before
+							+pos(abs, 7px null null 0)
+							content: ''
+							width: 8px
+							height: 8px
+							+bor-rad(50%)
+							background: color-rgba(color-get($mau,den),.15)
