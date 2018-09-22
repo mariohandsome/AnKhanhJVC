@@ -4,6 +4,8 @@
 //////////////////////////////////////
 
 .canhcam-ankhanh-navbar
+	+media-breakpoint-down(md)
+		margin-bottom: 2rem
 	.navbar-2
 		border-bottom: 1px solid color-get($mau,main-3)
 	.nav-item
@@ -30,3 +32,20 @@
 		a 
 			color: color-get($mau, trang) !important
 		border: none
+	.custom-select
+		+fz(1.14rem)
+		+fw(400)
+		color: color-get($mau, xam-4)
+		text-transform: uppercase
+		+pad(.5rem 2.14rem)
+		border-radius: 0
+		border-bottom: 1px solid color-get($mau,main-3)
+		background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%) 
+		text-align-last: center
+		&:focus
+	option 
+		text-align: center
+	input[type=text]
+		border: 2px solid red
+		border-radius: 4px
+		background: red
