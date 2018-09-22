@@ -1,0 +1,51 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+// Panigation								
+.canhcam-ankhanh-panigation-n-1
+	padding-top:0 !important
+	a
+		text-decoration: none
+	.pagelist
+		+media-breakpoint-up(md)
+			+pad(2rem null 1rem null)
+		.pagination
+			margin-bottom: 0
+			.page-item
+				+bor-rad(0px)
+				margin-left: .71rem
+				+media-breakpoint-down(md)
+					margin-left: 1rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					width: 2.5rem
+					height: 2.5rem
+					justify-content: center
+					align-items: center
+					display: flex
+					color: color-get($mau,main)
+					+bor-rad(0px)
+					border: 1px solid color-get($mau,main)
+					+fw(1.28rem)
+					background: color-get($mau,trang)
+					+media-breakpoint-up(md)
+						&:hover
+							color: color-get($mau,trang)
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+					+media-breakpoint-down(md)
+						// width: 3rem
+						// height: 3rem
+						+mar(0 .25rem)
+						&:active
+							color: color-get($mau,trang)		
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+				&.active
+					.page-link
+						color: color-get($mau,trang)
+						background: color-get($mau,main)
+						border: 1px solid color-get($mau,main)

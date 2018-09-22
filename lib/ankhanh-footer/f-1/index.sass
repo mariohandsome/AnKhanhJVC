@@ -1,0 +1,88 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-ankhanh-footer-f-1
+	background-position: center center
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(5rem 0 5.71rem)
+	color: color-get($mau, trang)
+	.form-group 
+		margin-bottom: 0rem !important
+	.title
+		margin-bottom: 3.5rem
+		h2 
+			+fz(2.57rem)
+			+fw(600)
+			margin-bottom: 0rem
+		p 
+			+fz(1.28rem)
+			+fw(100)
+			opacity: .5
+	.info
+		h3
+			+fz(1.3rem)
+			text-transform: uppercase
+		.inf
+			display: flex
+			flex-direction: column
+			+pad(0 2rem 4rem 2rem)
+			h2
+				+fz(1.3rem)
+		p 
+			+fz(1.14rem)
+			+fw(100)
+		span 
+			+fw(bold)
+		.detail
+			margin-top: 3rem
+			p 
+				+fz(1.14rem)
+				border-bottom: 1px dashed rgba(255, 255, 255, .25)
+				margin-bottom: 0
+				padding: .5rem
+
+	form
+		+media-breakpoint-down(md)
+			text-align: center
+		.btn-s
+			justify-content: end 
+			+media-breakpoint-down(md)
+				justify-content: center !important
+		.help-block
+			height: 1.2rem
+			ul
+				margin-bottom: 0
+				+fz(.9rem)
+				color: color-get($mau,vang-1)
+		label 
+			+fz(1rem)
+			+fw(100)
+			opacity: .5
+		input, textarea
+			background: rgba(0,0,0,0.25)
+			color: color-get($mau,trang)
+			&:focus
+				color: color-get($mau,trang)
+				background: rgba(0,0,0,0.25)
+		input, textarea
+			border: 1px solid color-get($mau,main-4)
+		.btn-submit 
+			cursor: pointer
+			border: 1px solid #ffffff
+			padding: .5rem 2rem
+			margin-top: 2.14rem
+			border-radius: 2rem
+			+transition(all .5s ease-in-out)
+			&:hover
+				border: 1px solid color-get($mau,main-4)
+			a 
+				+pad(2rem)
+.copy-right
+	p.text-f
+		font-size: 1rem 
+		+fw(100)
+		color: color-get($mau,duong-3)
+		+mar(1.7rem 0)

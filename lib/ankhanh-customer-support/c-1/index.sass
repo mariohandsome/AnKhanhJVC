@@ -1,0 +1,170 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+body
+	background: url('../img/ankhanh-background/b_1.png') center center
+.canhcam-ankhanh-customer-support-c-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(2rem 0)
+	// Form edit here
+	form
+		border: 1px solid  color-get($mau,main)
+		background: darken(color-get($mau,trang) ,0%)
+		+pad(2rem)
+		img 
+			width: 100%
+			max-width: 100%
+		input, textarea, select
+			background: darken(color-get($mau,trang) ,3%)
+			+pad(.6rem)
+		label
+			color: color-get($mau, xam-ct)
+			+fw(400)
+		.has-danger
+			input, textarea, select
+				border-color: color-get($mau,do-1)
+		h4 
+			text-align: center
+			font-size: 1.71rem
+			text-transform: uppercase
+			font-weight: inherit
+			margin-bottom: 2rem
+		.btn-ankhanh
+			margin-top: 2rem
+			+pad(.5rem)
+			color: color-get($mau, trang)
+			cursor: pointer
+			border-radius: 100px
+			border: none
+			opacity: 1 !important
+			background: color-get($mau, main)
+			+media-breakpoint-up(md)
+				&:hover
+					background: -moz-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+					background: -webkit-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+					background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+			+media-breakpoint-down(md)
+				&:active
+					background: -moz-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+					background: -webkit-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+					background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
+	// Magic edit here
+	.accordion-option
+		display: flex
+		background: darken(color-get($mau,main) ,0%)
+		margin-bottom: 1rem 
+		border: 1px solid  darken(color-get($mau,main) ,0%)
+		+pad(.5rem .5rem .5rem 1rem)
+		align-items: center
+		color: color-get($mau,trang)
+		h2 
+			+fw(bold)
+			text-transform: uppercase
+			color: color-get($mau,trang)
+			margin-bottom: 0
+		input
+			border: 1px solid darken(color-get($mau,trang) ,10%)
+			+pad(.15rem 1rem)
+			outline: none 
+			width: 150px 
+			min-width: 150px
+	// Answer edit here
+	#accordion
+		.card
+			border: none !important
+			margin-bottom: .5rem
+			.card-header
+				background: none 
+				+pad(.25rem 0)
+				h4 
+					+fz(1.14rem)
+					+fw(100)
+					line-height: inherit
+					a 
+						+transition(all .5s ease-in-out)
+						display: flex
+						color: color-get($mau, xam-ct)
+						text-decoration: none
+						.minus-circle
+							img 
+								+transition(all .5s ease-in-out)
+								width: 1.5rem
+								display: none
+								color: color-get($mau,main)
+								margin-left: 2rem
+						.plus-circle
+							img 
+								+transition(all .5s ease-in-out)
+								width: 1.5rem
+								display: block
+								color: darken(color-get($mau,trang) ,50%)
+								margin-left: 2rem
+			&.active 
+				.card-header
+					border: none !important
+					h4 
+						+fw(500)
+						color: color-get($mau,main-2)
+						a 
+							+fz(1.57rem)
+							color: color-get($mau,main)
+							.minus-circle
+								img 
+									display: block
+							.plus-circle
+								img 
+									display: none
+			.answer
+				background: color-get($mau,xam-cs) !important
+				+pad(1.5rem 4rem 2.5rem 3rem)
+				line-height: 2rem
+				color: color-get($mau,den)
+				+fz(1.07rem)
+				+fw(100)
+				+mar(0)
+// Panigation								
+.canhcam-ankhanh-panigation-n-1
+	padding-top: 2rem
+	.pagelist
+		+media-breakpoint-up(md)
+			+pad(2rem null 1rem null)
+		.pagination
+			margin-bottom: 0
+			.page-item
+				+bor-rad(0px)
+				margin-left: .5rem
+				+media-breakpoint-down(md)
+					margin-left: 1rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					width: 2.5rem
+					height: 2.5rem
+					justify-content: center
+					align-items: center
+					display: flex
+					color: color-get($mau,main)
+					+bor-rad(0px)
+					border: 1px solid color-get($mau,main)
+					+fw(1.28rem)
+					background: color-get($mau,trang)
+					+media-breakpoint-up(md)
+						&:hover
+							color: color-get($mau,trang)
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+					+media-breakpoint-down(md)
+						width: 3rem
+						height: 3rem
+						+mar(0 .25rem)
+						&:active
+							color: color-get($mau,trang)		
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+				&.active
+					.page-link
+						color: color-get($mau,trang)
+						background: color-get($mau,main)
+						border: 1px solid color-get($mau,main)

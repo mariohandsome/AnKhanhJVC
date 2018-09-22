@@ -1,0 +1,142 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+body
+	background: url('../img/ankhanh-background/b_1.png') center center
+.canhcam-ankhanh-news-n-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.bgw
+		background: white
+	h2 
+		+fz(2.57rem)
+		margin-bottom: 2rem
+		+fw(600)
+		color: color-get($mau, main)
+	.news-list
+		.item
+			margin-bottom: 2rem
+			display: block
+			text-decoration: none
+			+transition(all .5s ease-in-out)
+			figure
+				position: relative
+				img
+				figcaption.box 
+					+transition(all .5s ease-in-out)
+					padding-bottom: 1rem
+					margin-bottom: 2rem
+					box-shadow: 0px 1px 0px 0 color-get($mau, xam-3)
+					.text
+						+pad(1.5rem 0)
+						flex-wrap: nowrap
+						.date
+							height: 4rem
+							+pad(.3rem 2rem)
+							background: color-get($mau,main)
+							+media-breakpoint-up(md)
+								+pad(.3rem 2rem)
+							p.day 
+								+fz(1.4rem)
+								+fw(600)
+								color: color-get($mau, trang)
+								display: flex
+								justify-content: center
+								align-items: center 
+								text-align: center
+								+mar(0)
+								&:after
+									content: " "
+									+pos(abs, 50% null null null)
+									width: 50%
+									background: color-get($mau, trang)
+									height: 1px
+									top: 50%
+							time
+								color: color-get($mau, trang)
+								display: flex
+								justify-content: center
+								align-items: center 
+								text-align: center
+						.title
+							+pad(0 1.5rem)
+					h3
+						+fz(1.14rem)
+						+fw(600)
+						line-height: 1.5rem
+						color: color-get($mau,den)
+					time
+						+fz(.9rem)
+						+fw(200)
+						color: darken(color-get($mau,trang) ,10%)
+					p.content 
+						color: darken(color-get($mau,trang) ,50%)
+						line-height: 1.5rem
+						+fz(1.07rem)
+						display: -webkit-box
+						-webkit-line-clamp: 3
+						-webkit-box-orient: vertical
+						overflow: hidden
+						text-overflow: ellipsis
+						font-weight: lighter
+						padding-right: 1.5rem
+			+media-breakpoint-up(md)
+				&:hover
+					figcaption.box 
+						padding-left: 1rem
+						box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
+						h3 
+							color: color-get($mau,main)
+			+media-breakpoint-down(md)
+				&:active
+					figcaption.box 
+						padding-left: 1rem
+						box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
+						h3 
+							color: color-get($mau,main)
+// Panigation								
+.canhcam-ankhanh-panigation-n-1
+	padding-top: 2rem
+	.pagelist
+		+media-breakpoint-up(md)
+			+pad(2rem null 1rem null)
+		.pagination
+			margin-bottom: 0
+			.page-item
+				+bor-rad(0px)
+				margin-left: .5rem
+				+media-breakpoint-down(md)
+					margin-left: 1rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					width: 2.5rem
+					height: 2.5rem
+					justify-content: center
+					align-items: center
+					display: flex
+					color: color-get($mau,main)
+					+bor-rad(0px)
+					border: 1px solid color-get($mau,main)
+					+fw(1.28rem)
+					background: color-get($mau,trang)
+					+media-breakpoint-up(md)
+						&:hover
+							color: color-get($mau,trang)
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+					+media-breakpoint-down(md)
+						width: 3rem
+						height: 3rem
+						+mar(0 .25rem)
+						&:active
+							color: color-get($mau,trang)		
+							background: color-get($mau,main)
+							border: 1px solid color-get($mau,main)
+				&.active
+					.page-link
+						color: color-get($mau,trang)
+						background: color-get($mau,main)
+						border: 1px solid color-get($mau,main)

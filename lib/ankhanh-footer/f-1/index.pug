@@ -1,0 +1,46 @@
+section.canhcam-ankhanh-footer-f-1(bg-img="./img/ankhanh-footer/f_1.png")
+	.container
+		.row 
+			.col-10.mx-auto.title
+				h2.h2.text-center.text-uppercase Thông tin liên hệ
+				p.text-center Tận hưởng cuộc sống hiện đại tại khu đô thị phức hợp hạng nhất Việt Nam
+	.container
+		.row.info
+			.col-md-6
+				article.inf.h-100
+					p.text-center.text-md-left Ra đời với tiêu chí trở thành khu đô thị phức hợp hạng nhất Việt Nam, nhằm nâng cao chất lượng cuộc sống cư dân, khu đô thị Splendora cung cấp đầy đủ các tiện ích, các dịch vụ như trường học quốc tế, khu văn phòng, khu mua sắm, không gian giao lưu văn hóa, giáo dục, thể thao, mua sắm và giải trí, chăm sóc sắc đẹp, chăm sóc sức khỏe. 
+					.detail
+						p.text-center.text-md-left <i class="fa fa-phone" aria-hidden="true"></i> Hotline: <span>024 3755 6541</span>  |  Fax: 024 3755 6546
+						p.text-center.text-md-left <i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: Km10+600, Đại lộ Thăng Long, An Khánh, Hoài Đức, Hà Nội
+						p.text-center.text-md-left <i class="fa fa-envelope" aria-hidden="true"></i> www.splendora.vn | info@ankhanhjvc.com
+			.col-md-6
+				form.validator
+					.row
+						.form-group.col
+							label(for='name') Họ và tên
+								span.text-danger
+							input#name.form-control(type='text', data-error="Vui lòng nhập thông tin", required)
+							.help-block.with-errors
+					.row
+						.form-group.col-md-6
+							label(for='Email') Email
+							input#Email.form-control(type='text', data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+							.help-block.with-errors
+						.form-group.col-md-6
+							label(for='Phone') Số điện thoại
+							input#Phone.form-control(type='text', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
+							.help-block.with-errors
+					.row
+						.form-group.col
+							label(for='sms') Nội dung
+							textarea#sms.form-control(name="sms", cols="30", rows="4")
+
+					.row.justify-content-end
+						.col-12.d-flex.btn-s.justify-content-end
+							.btn-submit 
+								a GỬI
+.copy-right(bg-img="../img/ankhanh-background/b_3.png")
+	.container
+		.row
+			.col-12.text-center
+				p.text-f Website chính thức của Chủ Đầu Tư dự án Splendora. © 2018 bản quyền thuộc về Splendora. Tất cả các quyền được bảo hộ. Thiết kế bởi Cánh Cam.

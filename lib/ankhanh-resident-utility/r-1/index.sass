@@ -1,0 +1,182 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+body
+	background: url('../img/ankhanh-background/b_1.png') center center
+.canhcam-ankhanh-resident-utility-r-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0 2.5rem 0)
+	h2 
+		+fz(2.57rem)
+		margin-bottom: 2rem
+		+fw(600)
+		color: color-get($mau, main)
+	// Lưới các ô
+	.gallery-lists
+		+media-breakpoint-up(sm)
+			grid-auto-flow: dense
+			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+			display: grid
+			width: 100%
+			grid-gap: 1rem
+			.item
+				&:nth-child(2n+1)
+					grid-column: span 2
+					grid-row: span 2
+				&:nth-child(3n+1)
+					grid-column: span 1
+					grid-row: span 1
+				// Magic
+				&:nth-child(9)
+						grid-column: span 1
+						grid-row: span 1
+				+media-breakpoint-up(md)
+					&:nth-child(1), &:nth-child(4), &:nth-child(8), &:nth-child(10)
+						margin-left: .25rem !important
+						margin-right: .25rem !important
+					&:nth-child(2), &:nth-child(6)
+						margin-left: .25rem !important
+						margin-right: .5rem !important
+					&:nth-child(5)
+						margin-right: .5rem !important
+						margin-left: .25rem !important
+					&:nth-child(7), &:nth-child(9)
+						margin-left: .5rem !important
+						margin-right: .25rem !important
+					&:nth-child(3)
+						margin-left: .5rem !important
+						margin-right: .25rem !important
+	// Lưới chi tiết
+	.gallery-details
+		.item
+			text-decoration: none
+			overflow: hidden
+			figure
+				overflow: hidden
+				+mar(0rem)
+				position: relative
+				+media-breakpoint-down(md)
+					margin: 0rem .5rem .5rem .5rem
+				+media-breakpoint-down(xs)
+					margin: 0rem 1rem 2rem 1rem
+				&:before
+					content: ''
+					display: block
+					z-index: -1
+					background: color-get($mau, main)
+					width: 100%
+					height: 100%
+					+pos(abs, 0 0 null null)
+					+transition(all .5s ease-in-out)
+					+transform(translateY(-100%))
+				&:after
+					content: ''
+					display: block
+					background: rgba(0,0,0,.5)
+					background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)
+					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
+					width: 100%
+					height: 100%
+					+pos(abs, 0 0 null null)
+					+transition(all .5s ease-in-out)
+					+transform(translateY(0))
+				img
+					width: 100%
+					max-width: 100%
+					+transition(all .5s ease-in-out)
+				figcaption
+					padding: 2rem
+					text-align: center
+					+transition(all .5s ease-in-out)
+					+pos(abs, 50% null null 50%)
+					+transform(translateX(-50%) translateY(-50%))
+					z-index: 100
+					width: 100%
+					height: 100%
+					h2 
+						color: color-get($mau, trang)
+						+fw(100)
+						+fz(1rem)
+						position: absolute
+						bottom: 0%
+						width: 80%
+						display: flex
+						justify-content: center
+						align-items: center
+						text-align: center
+						+transition(all .5s ease-in-out)
+						line-height: 0 !important
+						+media-breakpoint-down(md)
+							+fz(1.7rem)
+					.content
+						height: 100%
+						overflow: hidden
+						+opacity(0)
+						+fz(1rem)
+						+fw(400)
+						margin-bottom: 2.2rem
+						+transition(all 1s ease-in-out)
+						+text-sha(0 0 .5rem color-get($mau,trang))
+						color: transparent
+						text-align: left
+						+media-breakpoint-down(md)
+							+fz(1.3rem)
+			+media-breakpoint-up(md)
+				&:hover
+					figure
+						&:after
+							+transform(translateY(0%))
+						&:before
+							z-index: 1
+							+transform(translateY(0))
+						figcaption
+							h2
+								+opacity(0)
+								line-height: 0 !important
+							.content
+								+opacity(1)
+								+text-sha(1px 1px 3px rgba(0,0,0,.4))
+								color: color-get($mau,trang)
+								display: -webkit-box
+								-webkit-line-clamp: 5
+								-webkit-box-orient: vertical
+								overflow: hidden
+								text-overflow: ellipsis
+								font-weight: lighter
+			+media-breakpoint-down(md)
+				&:active
+					figure
+						&:after
+							+transform(translateY(0%))
+						&:before
+							z-index: 1
+							+transform(translateY(0))
+						figcaption
+							h2
+								+opacity(0)
+								line-height: 0 !important
+							.content
+								+opacity(1)
+								+text-sha(1px 1px 3px rgba(0,0,0,.4))
+								color: color-get($mau,trang)
+								overflow: hidden
+	&.canhcam-video-fixed-size.lg-outer
+	padding: 0
+	.lg-inner
+		background-color: #000
+	.lg-sub-html
+		position: absolute
+		text-align: left
+	.lg-toolbar
+		background-color: transparent
+		height: 0
+		.lg-icon
+			color: #FFF
+	.lg-img-wrap
+		padding: 0
+
+.lg-backdrop.in
+	background: rgba(255,255,255,.8)

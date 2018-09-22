@@ -1,0 +1,86 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+body
+	background: url('../img/ankhanh-background/b_1.png') center center
+.canhcam-ankhanh-contact-c-1
+	h2 
+		+fz(2.57rem)
+		+mar(2rem 0)
+		+fw(inhirit)
+		color: color-get($mau, main)
+	.info
+		h3
+			+fz(1.3rem)
+			text-transform: uppercase
+		.inf
+			background: color-get($mau, main)
+			+pad(2rem)
+			.title
+				margin-bottom: .5rem
+				h2
+					+fz(1.43rem)
+					+fw(400)
+					+mar(0)
+					color: color-get($mau, trang)
+			p 
+				+fz(1.14rem)
+				+fw(100)
+				margin-bottom: .5rem
+				color: color-get($mau, trang)
+				opacity: .8
+		.company
+			+mar(0 0 3.5rem 0)
+	form
+		input, textarea
+			background: darken(color-get($mau,trang) ,3%)
+			+fz(1rem)
+			+fw(100)
+		.form-control
+			color: color-get($mau, den)
+			+pad(.6rem 1rem)
+			+mar(0 .5rem .5rem .5rem)
+		.input
+			height: 2rem
+		.help-block
+			ul
+				margin-bottom: 0
+				+fz(.9rem)
+				color: color-get($mau,do-1)
+				li
+					padding-left: 1rem
+		.captcha
+			display: flex
+			justify-content: center
+			align-items: center
+			img 
+				width: 100%
+			p.captcha2
+				img
+					padding: .5rem !important
+			input
+				width: 50%
+		.btn-submit
+			cursor: pointer
+			width: 80%
+			background: color-get($mau, xam-3)
+			justify-content: center
+			align-items: center
+			display: flex
+			padding: rem
+			margin: 0.5rem 0
+			border-radius: 25px
+			appearance:none !important
+			+transition(all .5s ease-in-out)
+			a
+				+fw(bold)
+				color: color-get($mau, xam-submit)
+				+fz(1.07rem)
+			+media-breakpoint-up(md)
+				&:hover
+					background: lighten(color-get($mau, xam-3), 2%)
+			+media-breakpoint-down(md)
+				&:active
+					background: lighten(color-get($mau, xam-3), 2%)
+

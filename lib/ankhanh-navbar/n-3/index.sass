@@ -1,0 +1,32 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-ankhanh-navbar
+	.navbar-2
+		border-bottom: 1px solid color-get($mau,main-3)
+	.nav-item
+		+transition(all .5s ease-in-out)
+		.nav-link
+			+fz(1.14rem)
+			+fw(400)
+			color: color-get($mau, xam-4)
+			text-transform: uppercase
+			+pad(.5rem 2.14rem)
+			border-radius: 0
+			+media-breakpoint-up(md)
+				&:hover
+					background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%)
+					color: color-get($mau, trang) !important
+					border: none
+			+media-breakpoint-down(md)
+				&:active
+					background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%)
+					color: color-get($mau, trang) !important
+					border: none
+	.active
+		background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%)
+		a 
+			color: color-get($mau, trang) !important
+		border: none

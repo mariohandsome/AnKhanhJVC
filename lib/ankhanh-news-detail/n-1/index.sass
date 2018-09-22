@@ -1,0 +1,102 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+body
+	background: url('../img/ankhanh-background/b_1.png') center center
+.canhcam-ankhanh-news-detail-n-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.news-read
+		text-align: start
+		hr
+			+mar(.5rem 0 1.5rem 0)
+		.title-news	
+			h1
+				+fz(1.57rem)
+				+fw(inherit)
+				color: color-get($mau, main)
+		figure
+			+mar(2rem 0 1.5rem 0)
+			overflow: hidden
+		ul
+			list-style: none
+			+pad(1rem 1.5rem 0 1.5rem)
+			li 
+				display: flex
+				+fz(1.07rem)
+				+fw(100)
+				+lh(1.6rem)
+				color: color-get($mau, xam-ct)
+				&:after
+					content: ""
+					background: gray
+					width: 8px
+					height: 8px
+					border-radius: 5px
+					position: absolute
+					left: 1rem
+					transform: translateY(.5rem)
+		p
+			+fz(1.07rem)
+			+fw(100)
+			+lh(1.6rem)
+			margin: 0
+			color: color-get($mau, xam-ct)
+			&.lead
+				+fw(bold)
+		time
+			+fz(1.07rem)
+			+fw(100)
+			color: color-get($mau,xam-ankhanh)
+		.item-news-read
+			text-decoration: none
+		.social-networks
+			.nav-item
+				margin-right: .5rem
+				&:last-child
+					margin-right: 0
+	//relative news
+	.rela-news
+		margin-top: 2rem
+		+media-breakpoint-up(md)
+			+mar(0)
+		.othernews
+			h2
+				background: color-get($mau, main)
+				color: color-get($mau, trang)
+				+fz(1.71rem)
+				+fw(initial)
+				+mar(0 0 1.5rem 0)
+				+pad( .5em.9em .25em .9em)
+				+media-breakpoint-down(md)
+					display: flex
+					align-items: center
+					justify-content: center
+			// h3
+			// 	color: color-get($mau,main)
+			// 	+fz(1.4rem)
+			// 	+
+			// 	margin-bottom: 0
+		a
+			text-decoration: none
+		.item-news
+			h3
+				+fz(1.07rem)
+				color: color-get($mau,den)
+				+pad(.5rem 0 .25 0)
+				+fw(100)
+			time
+				+pad(1.07rem 0)
+				+fz(1.07rem)
+				+fw(100)
+				color: darken(color-get($mau,trang) ,30%)
+			img 
+				width: 100%
+				max-width: 100%
+				+pad(1rem 0)
+			hr
+				+mar(1rem 0 1rem 0)
+				+media-breakpoint-down(md)
+					+mar(1rem 0 1.5rem 0)

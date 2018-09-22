@@ -28,6 +28,111 @@
                 "introduce/all-tab/quyhoach",
                 "introduce/all-tab/phattrien"
             ]
+        },
+		"ankhanh-breadcrumb": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-breadcrumb/b-1"
+            ]
+        },
+		"ankhanh-resident": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-resident/r-1"
+            ]
+        },
+		"ankhanh-resident-utility": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-resident-utility/r-1"
+            ]
+        },
+		"ankhanh-news": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-news/n-1"
+            ]
+        },
+		"ankhanh-news-detail": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-news-detail/n-1"
+            ]
+        },
+		"ankhanh-customer-support": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-customer-support/c-1"
+            ]
+        },
+		"ankhanh-recruitment-detail": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-recruitment-detail/r-1"
+            ]
+        },
+		"ankhanh-recruitment": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+				"ankhanh-recruitment/r-1",
+				"ankhanh-recruitment/r-2"
+            ]
+        },
+		"ankhanh-contact": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-contact/c-1"
+            ]
+        },
+		"ankhanh-footer": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-footer/f-1"
+            ]
+        },
+		"ankhanh-breadcrumb": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-breadcrumb/b-1"
+            ]
+        },
+		"ankhanh-navbar": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-navbar/n-1"
+            ]
+        },
+		"panigation": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "panigation/p-1"
+            ]
         }
     }
 }
