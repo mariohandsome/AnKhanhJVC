@@ -80,6 +80,11 @@ body
 		.text
 			display: flex
 			+mar(2rem 0)
+			+media-breakpoint-down(sm)
+				flex-direction: column
+				.btn-contact.btn-contact-1
+					margin-right: 0rem !important
+					margin-bottom: 1rem !important
 			.btn-contact
 				+pad(0.78rem 2.14rem)
 				border-radius: 30px
