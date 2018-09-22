@@ -133,6 +133,14 @@
             "body": [
                 "panigation/p-1"
             ]
+        },
+		"ankhanh-progress": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "ankhanh-progress/p-1"
+            ]
         }
     }
 }

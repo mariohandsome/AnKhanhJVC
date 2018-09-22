@@ -1,0 +1,72 @@
+section.canhcam-ankhanh-progress-p-1
+	article.news-list
+		.container
+			.row 
+				.col-10.mx-auto
+					h2.h2.text-center.text-uppercase Tiến độ
+					.container
+			.row.justify-content-center.no-gutters
+				.col-6.col-md-3.year
+					p Năm 
+					select.yearProgress(form='addProperty', name='propertyType')
+						option(value='0') Năm 2018
+						option(value='1') Năm 2017
+						option(value='2') Năm 2016
+		.container
+			.row#products
+				//- n-1 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_1.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 01
+				//- n-2 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_2.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 02
+				//- n-3 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_3.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 03
+				//- n-4 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_4.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 04
+				//- n-5 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_5.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 05
+				//- n-6 
+				.col-sm-6.col-lg-4
+					a.item(href="javascript:void(0)")
+						figure
+							img.w-100.img-fluid(src="./img/ankhanh-progress/p_6.png", alt="alt")
+							figcaption.box
+								.row.no-gutters.text-progress
+									.col-12.title
+										h3 Tháng 06
+		//- Panigation
+		include ../../panigation/p-1/index.pug
