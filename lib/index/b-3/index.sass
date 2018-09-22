@@ -4,20 +4,24 @@
 //////////////////////////////////////
 
 .home-box-3
-	+pad(4rem 0)
+	+pad(3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
 	.item
 		.box-title
 			+mar(0 0 2rem 0)
 			.title
 				text-transform: uppercase
-				+fz(1.8rem)
 				font-weight: bold
 				color: color-get($mau,main)
+				+fz(2rem)
+				+media-breakpoint-up(lg)
+					+fz(r(36px))
 		.box-content
 			+mar(0 0 4rem 0)
 			.content
-				+fz(1.15rem)
-				font-weight: lighter
+				+fz(r(16px))
+				+fw(300)
 		.box-img
 			overflow: hidden
 			border: 1px solid color-get($mau,main)
@@ -27,7 +31,8 @@
 		figcaption
 			.h3
 				+pad(1.5rem 0 0 0)
-				+fz(1.15rem)
+				+fz(r(16px))
+				+fw(300)
 	.box-img-full-width
 		img
 			display: none

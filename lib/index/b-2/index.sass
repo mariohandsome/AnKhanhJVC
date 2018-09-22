@@ -26,18 +26,20 @@
 				color: color-get($mau,trang)
 				font-weight: bold
 				text-transform: uppercase
-				+fz(r(36px))
 				+mar(0 0 2rem 0)
+				+fz(2rem)
+				+media-breakpoint-up(lg)
+					+fz(r(36px))
 			.box-content
 				color: #fff
 				.brief-content
 					+fz(1.15rem)
 					+mar(0 0 2rem 0)
-					font-weight: lighter
+					font-weight: 300
 				.btn-more
 					+fz(1rem)
 					color: color-get($mau,trang)
-					+pad(.4rem 1.5rem)
+					+pad(r(11px) r(38px))
 					border-radius: 20px
 					text-transform: uppercase
 					+fw(500)

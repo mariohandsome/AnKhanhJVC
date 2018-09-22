@@ -11,16 +11,18 @@
 		.title
 			text-transform: uppercase
 			color: #fff
-			+fz(1.8rem)
 			font-weight: bold
+			+fz(2rem)
+			+media-breakpoint-up(lg)
+				+fz(r(36px))
 		.content
 			color: #fff
-			+fz(1rem)
-			font-weight: lighter
+			+fz(r(16px))
+			+fw(300)
 	.btn-more
-		+fz(1rem)
+		+fz(r(16px))
 		color: color-get($mau,trang)
-		+pad(.4rem 1.5rem)
+		+pad(r(11px) r(38px))
 		border-radius: 20px
 		text-transform: uppercase
 		+fw(500)
@@ -52,8 +54,9 @@
 				flex-direction: column
 				justify-content: flex-end
 				h3
-					+fz(1.2rem)
+					+fz(r(18px))
 					+fw(300)
+					text-transform: uppercase
 				time
 					+fz(.9rem)
 					+fw(200)

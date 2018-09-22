@@ -8,15 +8,17 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.title
-		+fz(1.8rem)
 		font-weight: bold
 		text-transform: uppercase
 		+mar(0 0 2rem 0)
 		color: color-get($mau, main)
+		+fz(2rem)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	figure
 		+mar(0)
 		.box-content
 			.content, .brief-content
-				+fz(1rem)
+				+fz(r(16px))
 			.brief-content
 				+lh(2rem)
